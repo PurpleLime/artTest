@@ -1,0 +1,214 @@
+@import "fonts.css";
+
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: "Circe";
+
+}
+
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    filter:blur(200px);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.figure1{
+    width: 60vw;
+    height: 50vw;
+    background-image: url("../img/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0%;
+    top: -7%;
+    opacity: 0.9;
+    animation: rotating 35s linear infinite;
+    transform-origin: 70% 50%;
+}
+
+
+.figure2{
+    width: 60vw;
+    height: 50vw;
+    background-image: url("../img/2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -10%;
+    top: -10.5%;
+    opacity: 0.9;
+    animation: rotating 35s linear infinite;
+    transform-origin: 60% 50%;
+}
+
+.figure3{
+    width: 60vw;
+    height: 50vw;
+    background-image: url("../img/3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -7.5%;
+    top: 45%;
+    opacity: 0.9;
+    animation: rotating 35s linear infinite;
+    transform-origin: 60% 50%;
+}
+
+
+.active-figure{
+    width: 60vw;
+    height: 50vw;
+    background-image: url("../img/4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 10;
+    /* transition: transform 0.1s ease-in; */
+ 
+}
+
+
+.cursor-zone {
+     width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+.cursor-circle {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* background-color: rgb(202, 144, 197); */
+    background-image: url('../img/blackStar.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    transform-origin: 50% 50%;
+    pointer-events: none;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    padding: 1.56vw 2.6vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.links {
+    display: flex;
+    padding: 1.15vw 2.24vw;
+    gap: 2.29vw;
+    align-items: center;
+    border-radius: 1.56vw;
+    background-color: rgba(76, 76, 76, 0.1);
+    border-top: 1px solid rgba(116, 116, 116, 0.466);
+    border-left: 1px solid rgba(116, 116, 116, 0.466);
+    border-right: 1px solid rgba(87, 87, 87, 0.301);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+    backdrop-filter: blur(8px);
+}
+
+
+.links > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.04vw;
+    line-height: 1.15vw;
+    font-weight: 400;
+}
+
+
+/* h1 {
+    font-size: 40px;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+} */
+ 
+
+
+
+
+.research-slogan {
+    max-width: 65.1vw;
+    font-size: 3.33vw;
+    line-height: 3.125vw;
+    font-weight: 300;
+    margin-top: 20.05vw;
+    margin-bottom: 25.31vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
