@@ -60,7 +60,7 @@ let smallCircleSpeed = 8;
 for(let i = 0; i<signsAmount; i++){
     let sign = document.createElement('div');
     sign.classList.add('sign');
-    sign.style.backgroundImage = `url('../img/sign${i+1}.png')`;
+    sign.style.backgroundImage = `url('./img/sign${i+1}.png')`;
     signsArr.push(sign);
     signsZone.append(sign);
 }
