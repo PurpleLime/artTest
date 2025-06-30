@@ -69,7 +69,7 @@ for(let i = 0; i<signsAmount; i++){
 for(let i = 0; i<reverseSignsAmount; i++){
       let sign = document.createElement('div');
     sign.classList.add('sign');
-    sign.style.backgroundImage = `url('../img/sign${reverseSignsAmount - i}.png')`;
+    sign.style.backgroundImage = `url('./img/sign${reverseSignsAmount - i}.png')`;
     reverseSignsArr.push(sign);
     signsZone.append(sign);
 }
