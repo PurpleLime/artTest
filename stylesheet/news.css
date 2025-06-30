@@ -114,6 +114,7 @@ body {
     height: 18.85vw;
     margin-bottom: 1.35vw;
     border-radius: 1.04vw;
+    user-select: none;
 }
 
 .news-card-title {
