@@ -1,47 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Новости</title>
     <link rel="stylesheet" href="stylesheet/style.css"/>
-    <link rel="stylesheet" href="stylesheet/index.css"/>
-  </head>
-  <body> 
-    <nav>
-      <div class="main-menu">
-        <a href="index.html">Новости</a>
-        <div class="links">
-          <a href="news.html">Новости</a>
-          <a href="shop.html">Магазин</a>
-          <a href="tours.html">Экскурсии</a>
-          <a href="contact.html">Контакты</a>
+    <link rel="stylesheet" href="stylesheet/news.css"/>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<nav class= "navbar">
+  <div class="links">
+    <a href="index.html">О нас</a>
+    <a href="shop.html">Магазин</a>
+    <a href="news.html">Мероприятия</a>
+    <a href="instruction.html">Инструкция</a>
+  </div>
+</nav>
+  <div class="modal modal-closed" id="modal">
+    <form class="modal-form">
+        <div class="modal-title">Зарегистрируйтесь</div>
+        <input class="modal-input" type="text" placeholder="имя"/>
+        <input class="modal-input" type="text" placeholder="почта"/>
+        <input class="modal-input" type="text" placeholder="+7 (000) 000-00-00"/>
+        <button class="modal-button" type="submit">отправить</button>
+    </form>
+  </div>
+  <div class = "cursor-zone">
+    <div class = "cursor-circle" id = "cursor-circle"></div>
+  </div>
+  <div class="background">
+    <div class="figure1"></div>
+    <div class="figure2"></div>
+    <div class="figure3"></div>
+    <div class="active-figure" id="active-figure"></div>
+  </div>
+
+  <div class="dark-container">
+    <div class="black-back"></div>
+
+    <div class="news-container">
+      <div class="news-card" id="1">
+        <img class="news-card-image" src="./img/news1.png"/>
+        <h2 class="news-card-title">Новейшая модель портала SJ-25</h2>
+        <p class="news-card-description">Скорость перемещения 4 секунды, высокая точность местоположения, отсутствие побочных эффектов и многое другое смогли достичь наши ученые за предыдущий год экспериментов.</p>
+        <button class="news-card-button">Читать</button>
+      </div>
+      <div class="news-card" id="2">
+        <img class="news-card-image" src="./img/news2.png"/>
+        <h2 class="news-card-title">Лаборатория Венера</h2>
+        <p class="news-card-description">На первый взгляд — обычная лаборатория, но при ближайшем рассмотрении становится ясно: это место предназначено для работы с объектами, не поддающимися классической классификации.</p>
+        <button class="news-card-button">Читать</button>
+      </div>
+      <div class="news-card" id="3">
+        <img class="news-card-image" src="./img/news3.png"/>
+        <h2 class="news-card-title">Офис вне времени</h2>
+        <p class="news-card-description">В этом загадочном кабинете, скрытом за рифлёными стеклянными перегородками, будто застыла граница между наукой и магией.</p>
+        <button class="news-card-button">Читать</button>
+      </div>
+      <div class="news-card" id="4">
+        <img class="news-card-image" src="./img/news4.png"/>
+        <h2 class="news-card-title">Инновационные зелья</h2>
+        <p class="news-card-description">В рамках проекта учёные моделируют и стабилизируют "темпоральные карманы" — участки пространства, в которых события могут происходить с нарушением привычной хронологии.</p>
+        <button class="news-card-button">Читать</button>
+      </div>
+    </div>
+
+    <div class="research-cards-container" id="research-cards-container">
+      <div class="research-card">
+        <div class="research-card-info">
+          <h2 class="research-card-info-title">Юный Алхимик</h2>
+          <p class="research-card-info-text">
+            АЛХИМ ценит юные умы! Мы приглашаем всех детей попробовать себя в профессии алхимика.
+            <br/>
+            <br/>
+            Интерактивный веб-плакат в формате игры. Позволяет детям проникнуть в мир магии<br/>и волшебства!
+          </p>
+          <button type="button" class="research-card-button" id="alchemy-button">
+            Подробнее
+          </button>
+        </div>
+        <img class="research-card-image" src="./img/big-news-card1.png"/>
+      </div>
+      <div class="research-card">
+        <div class="research-card-info">
+          <h2 class="research-card-info-title">Загадочный лес</h2>
+          <p class="research-card-info-text">
+            Загадочный лес — это интерактивное приключение, где дети пробуют себя в роли алхимиков, создавая зелья и исследуя волшебные грибы.
+            <br/>
+            <br/>
+            Веб-плакат помогает погрузиться в магический мир через игру и воображение.
+          </p>
+          <button type="button" class="research-card-button">
+            Подробнее
+          </button>
+        </div>
+        <img class="research-card-image" src="./img/big-news-card2.png"/>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bright-container">
+    <div class="white-back"></div>
+
+    <div class="research-title-container">
+      <div class="star-divider logo-black"></div>
+      <h1 class="research-title">Наши исследования</h1>
+    </div>
+
+    <div class="lab-events-container" id="lab-events-container">
+
+      <div class="lab-event">
+        <img class="lab-event-image" src="./img/lab-event1.png"/>
+        <div class="lab-event-card lab-event-card-star-path1">
+          <div class="lab-event-title">Алхимия будущего: живые<br/>формы искусства</div>
+          <div class="lab-event-description">
+            Погрузитесь в экспериментальное пространство, где наука встречается с воображением.
+            <br/>
+            <br/>
+            Лаборатория АЛХИМ приглашает вас на интерактивное событие, посвящённое биотехнологиям, цифровым мутациям и новому пониманию живого.
+          </div>
+          <button class="lab-event-button">Принять участие</button>
         </div>
       </div>
-    </nav>
-    <h1>Новости</h1>
-    <div class="background">
-      <div class="figure1">
-
+      <div class="lab-event">
+        <div class="lab-event-card lab-event-card-star-path2">
+          <div class="lab-event-title">Пси-биорезонансная ночь<br/>(ночная конференция)</div>
+          <div class="lab-event-description">
+            В этот вечер откроются порталы в иные слои восприятия, где границы между реальностью  и психорезонансной иллюзией стираются.
+            <br/>
+            <br/>
+            Алхимическую проекцию теней и света, Ритуал «Черного Кота» — коллективное очищение  от фантомов ментального шума
+          </div>
+          <button class="lab-event-button">Принять участие</button>
+        </div>
+        <img class="lab-event-image" src="./img/lab-event2.png"/>
       </div>
-      <div class="figure2">
-
+      <div class="lab-event">
+        <img class="lab-event-image" src="./img/lab-event3.png"/>
+        <div class="lab-event-card lab-event-card-star-path3">
+          <div class="lab-event-title">Экскурсия по алхимической оранжерее (Cortex Δ-Node)</div>
+          <div class="lab-event-description">
+            Погрузитесь в экспериментальное пространство, где наука встречается с воображением.
+            <br/>
+            <br/>
+            Лаборатория АЛХИМ приглашает вас на интерактивное событие, посвящённое биотехнологиям, цифровым мутациям и новому пониманию живого.
+          </div>
+          <button class="lab-event-button">Принять участие</button>
+        </div>
       </div>
-      <div class="figure3">
-
-      </div>
-      <div class="active-figure" id="active-figure">
-        
-      </div>
-      
     </div>
-    <div class = "cursor-zone">
-      <div class = "cursor-circle" id = "cursor-circle">
 
-      </div>
+
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="logo-hse logo-white"></div>
+    <div class="author">
+      <div class="author-star logo-white"></div>
+      <h1 class="author-text">Елизавета Шин БП24Д309а</h1>
+      <div class="author-star logo-white"></div>
     </div>
-    <script src="javascript/index.js">
+    <div class="social">
+      <a class="social-telegram logo-white" href="https://t.me/lisa_germsh" target="_blank"></a>
+      <a class="social-vk logo-white" href="https://vk.com/gruuuuuustno" target="_blank"></a>
+    </div>
+  </footer>
 
-    </script>
-  </body>
+  <script src="javascript/utils.js"></script>
+  <script src="javascript/news.js"></script>
+</body>
 </html>

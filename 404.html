@@ -6,26 +6,41 @@
     <title>404 — Страница не найдена</title>
     <link rel="stylesheet" href="stylesheet/style.css"/>
     <link rel="stylesheet" href="stylesheet/404.css"/>
+      <link rel="icon" href="favicon.ico">
   </head>
-  <body> 
-    <nav>
-      <div class="main-menu">
-        <a href="index.html">О нас</a>
-        <div class="links">
-          <a href="news.html">Новости</a>
+<body>
+    <nav class= "navbar">
+      <div class="links">
+          <a href="index.html">О нас</a>
           <a href="shop.html">Магазин</a>
-          <a href="tours.html">Экскурсии</a>
-          <a href="contact.html">Контакты</a>
-        </div>
+          <a href="news.html">Мероприятия</a>
+          <a href="instruction.html">Инструкция</a>
       </div>
     </nav>
-     <div class="wrapper">
-        <section id="text"></section>
-            <h1 class="error">404</h1>
-            <h2 class="error">Страница не найдена</h1>
-              <p>Возможно, она никогда не существовала или была удалена.</p>
-              <p>Вернитесь назад или на главную страницу.</p>
-        <section id="image"></section>
-     </div>
- </body>
+    <div class="background">
+      <div class="figure1"></div>
+      <div class="figure2"></div>
+      <div class="figure3"></div>
+      <div class="active-figure" id="active-figure"></div>
+    </div>
+    <div class = "cursor-zone">
+      <div class = "cursor-circle" id = "cursor-circle"></div>
+    </div>
+    <div class="big-image"></div>
+
+    <div class="no-page-container">
+        <div class="no-page-content">
+            <div class="no-page-image"></div>
+            <div class="no-page-description">
+                <h2 class="no-page-title">Увы, поиск увёл не туда...</h2>
+                <p class="no-page-subtitle">Формула запрошенного элемента не найдена.<br/>Вы открыли врата в Пустую Колбу — страницу, которой<br/>не существует в этом измерении.</p>
+            </div>
+        </div>
+        <button class="no-page-back-button" id="no-page-back-button">Вернуться</button>
+
+    </div>
+
+    <script src="javascript/utils.js"></script>
+    <script src="javascript/404.js"></script>
+</body>
 </html>

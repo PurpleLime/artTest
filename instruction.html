@@ -3,46 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты</title>
+    <title>Инструкция</title>
     <link rel="stylesheet" href="stylesheet/style.css"/>
-    <link rel="stylesheet" href="stylesheet/index.css"/>
+    <link rel="stylesheet" href="stylesheet/instruction.css"/>
     <link rel="icon" href="favicon.ico">
   </head>
-  <body>
-    <nav>
-      <div class="main-menu">
-        <a href="index.html">О нас</a>
+<body>
+    <nav class= "navbar">
         <div class="links">
-          <a href="news.html">Новости</a>
+          <a href="index.html">О нас</a>
           <a href="shop.html">Магазин</a>
-          <a href="tours.html">Экскурсии</a>
-          <a href="contact.html">Контакты</a>
+          <a href="news.html">Мероприятия</a>
+          <a href="instruction.html">Инструкция</a>
         </div>
-      </div>
     </nav>
-    <h1>Контакты</h1>
     <div class="background">
-      <div class="figure1">
-
-      </div>
-      <div class="figure2">
-
-      </div>
-      <div class="figure3">
-
-      </div>
-      <div class="active-figure" id="active-figure">
-
-      </div>
-
+      <div class="figure1"></div>
+      <div class="figure2"></div>
+      <div class="figure3"></div>
+      <div class="active-figure" id="active-figure"></div>
     </div>
     <div class = "cursor-zone">
-      <div class = "cursor-circle" id = "cursor-circle">
-
-      </div>
+      <div class = "cursor-circle" id = "cursor-circle"></div>
     </div>
-    <script src="javascript/index.js">
+    <div class="instruction-star-path"></div>
 
-    </script>
-  </body>
+    <div class="instruction-container">
+        <h1 class="research-slogan">Лаборатория является удивительным,<br/>но опасным местом. Всем, кто намеревается посетить<br/>ее рекомендуем ознакомиться с инструкцией </h1>
+
+        <div class="research-cards-container" id="research-cards-container">
+            <div class="research-card">
+                <div class="research-card-info">
+                    <h2 class="research-card-info-title">Инструкция по выживанию</h2>
+                    <p class="research-card-info-text">
+                        Описание опасных зон, советы, контакты
+                    </p>
+                    <button type="button" class="research-card-button">
+                        Читать
+                    </button>
+                </div>
+                <img class="research-card-image" src="./img/survival-instruction.png"/>
+            </div>
+        </div>
+        <div class="instruction-cards-container">
+            <div class="instruction-card">
+                <img class="instruction-card-image" src="./img/instruction-card1.png">
+            </div>
+            <div class="instruction-card">
+                <img class="instruction-card-image" src="./img/instruction-card2.png">
+            </div>
+            <div class="instruction-card">
+                <img class="instruction-card-image" src="./img/instruction-card3.png">
+            </div>
+        </div>
+
+        <div class="instruction-star-path-end"></div>
+        <footer class="footer" id="footer">
+            <div class="logo-hse logo-white"></div>
+            <div class="author">
+                <div class="author-star logo-white"></div>
+                <h1 class="author-text">Елизавета Шин БП24Д309а</h1>
+                <div class="author-star logo-white"></div>
+            </div>
+            <div class="social">
+                <a class="social-telegram logo-white" href="https://t.me/lisa_germsh" target="_blank"></a>
+                <a class="social-vk logo-white" href="https://vk.com/gruuuuuustno" target="_blank"></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="javascript/utils.js"></script>
+    <script src="javascript/instruction.js"></script>
+</body>
 </html>

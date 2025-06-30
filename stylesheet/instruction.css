@@ -1,0 +1,116 @@
+body{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    position: relative;
+    user-select: none;
+}
+
+.background{
+    background: rgb(255, 255, 255);
+    filter:blur(150px);
+}
+
+@media (max-width: 768px) {
+    .background {
+        filter: blur(50px);
+    }
+}
+
+.figure1 {
+    opacity: 1;
+}
+
+.figure2 {
+    opacity: 1;
+}
+
+.figure3 {
+    opacity: 1;
+}
+
+.cursor-circle {
+    background-image: url('../img/blackStar.svg');
+}
+
+.links > a {
+    color: rgb(0, 0, 0);
+}
+
+.instruction-star-path {
+    position: absolute;
+    background-image: url("../img/instruction-star-path.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 48.86vw;
+    width: 100%;
+    left: 0;
+    top: 4.22vw;
+}
+
+.instruction-container {
+    padding: 0 4.19vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .instruction-container {
+        min-height: calc(100vh - 5.42vw - 26px);
+    }
+}
+
+.instruction-cards-container {
+    width: 100vw;
+    height: 32.5vw;
+    display: flex;
+    align-items: center;
+    gap: 2.29vw;
+    margin: 3.02vw -4.19vw;
+    overflow-x: hidden;
+}
+
+.instruction-card {
+    width: 59.64vw;
+    height: 32.5vw;
+    display: flex;
+    align-items: center;
+    padding: 1.72vw;
+    border-radius: 1.56vw;
+    background-color: rgba(76, 76, 76, 0.1);
+    backdrop-filter: blur(13px);
+    border-top: 1px solid rgba(116, 116, 116, 0.466);
+    border-left: 1px solid rgba(116, 116, 116, 0.466);
+    border-right: 1px solid rgba(87, 87, 87, 0.301);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+}
+
+.instruction-card-image {
+    width: 56.2vw;
+    height: 28.9vw;
+    border-radius: 1.56vw;
+}
+
+.instruction-star-path-end {
+    width: 104.05vw;
+    height: 17.66vw;
+    margin: 0 -11.74vw -3.85vw -6.69vw;
+    background-image: url("../img/instruction-star-path-end.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 0 -4.19vw 0 -4.19vw;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: auto;
+    }
+}

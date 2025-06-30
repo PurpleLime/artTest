@@ -1,47 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин</title>
     <link rel="stylesheet" href="stylesheet/style.css"/>
     <link rel="stylesheet" href="stylesheet/shop.css"/>
-  </head>
-  <body> 
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
     <nav class= "navbar">
-      <div class="links">
-          <a href="index.html">О нас</a>
-          <a href="news.html">Новости</a>
-          <a href="shop.html">Магазин</a>
-          <a href="tours.html">Экскурсии</a>
-          <a href="contact.html">Контакты</a>
-      </div>
+        <div class="links">
+            <a href="index.html">О нас</a>
+            <a href="shop.html">Магазин</a>
+            <a href="news.html">Мероприятия</a>
+            <a href="instruction.html">Инструкция</a>
+        </div>
     </nav>
-    <div class="background">
-      <div class="figure1">
-
+  <div class="background">
+      <div class="figure1"></div>
+      <div class="figure2"></div>
+      <div class="figure3"></div>
+      <div class="active-figure" id="active-figure"></div>
+  </div>
+  <div class = "cursor-zone">
+      <div class = "cursor-circle" id = "cursor-circle"></div>
+  </div>
+  <div class="shop-container">
+      <div class="potions-container">
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/potion1.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Зелье удачи</h2>
+                      <p class="shop-item-price">₽ 3000</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/potion2.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Энергия 24ч</h2>
+                      <p class="shop-item-price">₽ 3500</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/potion3.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Зелье просветления</h2>
+                      <p class="shop-item-price">₽ 4200</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
       </div>
-      <div class="figure2">
 
+      <div class="research-card">
+          <div class="research-card-info">
+              <h2 class="research-card-info-title">Могучая акция</h2>
+              <p class="research-card-info-text">
+                  Комбо зелий для студентов
+              </p>
+              <button type="button" class="research-card-button">
+                  Подробнее
+              </button>
+          </div>
+          <img class="research-card-image" src="./img/potions-sale.png"/>
       </div>
-      <div class="figure3">
 
+      <div class="merch-container">
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/merch1.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Эксперименты Винера</h2>
+                      <p class="shop-item-price">₽ 799</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/merch2.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Постер </h2>
+                      <p class="shop-item-price">₽ 300</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/merch3.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Инструкция Алхим</h2>
+                      <p class="shop-item-price">₽ 2900</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/merch4.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Алхимическая тетрадь</h2>
+                      <p class="shop-item-price">₽ 399</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/merch5.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Кепка </h2>
+                      <p class="shop-item-price">₽ 980</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
+          <div class="shop-item-card">
+              <img class="shop-item-image" src="./img/merch6.png"/>
+              <div class="shop-item-description">
+                  <div class="shop-item-text">
+                      <h2 class="shop-item-title">Винил песнь магии</h2>
+                      <p class="shop-item-price">₽ 2490</p>
+                  </div>
+                  <button class="shop-item-add-button"></button>
+              </div>
+          </div>
       </div>
-      <div class="active-figure" id="active-figure">
-        
-      </div>
-      
-    </div>
-    <div class = "cursor-zone">
-      <div class = "cursor-circle" id = "cursor-circle">
 
-      </div>
-    </div>
+  </div>
 
-    <div class="research-container"> 
-      <h1 class="research-slogan">Каждая покупка — вклад в науку за пределами возможного</h1>
-    <script src="javascript/index.js">
-    
-    </script>
-  </body>
+  <footer class="footer" id="footer">
+      <div class="logo-hse logo-white"></div>
+      <div class="author">
+          <div class="author-star logo-white"></div>
+          <h1 class="author-text">Елизавета Шин БП24Д309а</h1>
+          <div class="author-star logo-white"></div>
+      </div>
+      <div class="social">
+          <a class="social-telegram logo-white" href="https://t.me/lisa_germsh" target="_blank"></a>
+          <a class="social-vk logo-white" href="https://vk.com/gruuuuuustno" target="_blank"></a>
+      </div>
+  </footer>
+
+    <script src="javascript/utils.js"></script>
+  <script src="javascript/shop.js"></script>
+</body>
 </html>
