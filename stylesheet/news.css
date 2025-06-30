@@ -106,6 +106,7 @@ body {
     border-left: 1px solid rgba(116, 116, 116, 0.466);
     border-right: 1px solid rgba(87, 87, 87, 0.301);
     border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+    user-select: none;
 }
 
 .news-card-image {
