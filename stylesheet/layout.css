@@ -1,10 +1,10 @@
 @import "fonts.css";
 
-@supports (padding: env(safe-area-inset-top)) {
-    body {
-        padding-top: env(safe-area-inset-top);
-    }
-}
+/*@supports (padding: env(safe-area-inset-top)) {*/
+/*    body {*/
+/*        padding-top: env(safe-area-inset-top);*/
+/*    }*/
+/*}*/
 
 body{
     font-family: "Circe";
