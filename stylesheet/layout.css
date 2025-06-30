@@ -135,6 +135,7 @@ body{
     justify-content: center;
     border-radius: 1.56vw;
     background-color: rgba(76, 76, 76, 0.1);
+    background-color: rgba(52, 52, 52, 0.1);
     border-top: 1px solid rgba(116, 116, 116, 0.466);
     border-left: 1px solid rgba(116, 116, 116, 0.466);
     border-right: 1px solid rgba(87, 87, 87, 0.301);

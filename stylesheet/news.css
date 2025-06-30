@@ -40,6 +40,14 @@ body {
     margin-bottom: -7.24vw;
 }
 
+.links {
+    background-color: rgba(30, 30, 30, 0.2)
+}
+
+.links > a {
+    color: rgb(210, 210, 210);
+}
+
 @media (max-width: 768px) {
     .navbar {
         margin-bottom: -9.5vw;
